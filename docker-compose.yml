@@ -1,0 +1,29 @@
+version: '3'
+services:
+  amazon:
+    image: rajjambhle007/amazononline:latest
+    ports:
+      - "80:80"
+    deploy:
+      replicas: 3
+
+  flipkart:
+    image: rajjambhle007/flipkartline:latest
+    ports:
+      - "81:80"
+    deploy:
+      replicas: 3
+
+  meesho:
+    image: rajjambhle007/meeshoonline:latest
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 3
+
+  shopify:
+    image: rajjambhle007/shopifyonline:latest
+    ports:
+      - "83:80"
+    deploy:
+      replicas: 3
